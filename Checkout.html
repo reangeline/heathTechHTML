@@ -1,0 +1,248 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Health tech</title>
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#7952b3">
+
+</head>
+<body class="bg-light">
+  
+<div class="container  py-3">
+
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span>Logo  </span>
+        <span class="fs-4">Health Tech</span>
+      </a>
+  
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Home</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Preco</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Ajuda</a>
+        <a class="py-2 text-dark text-decoration-none" href="#">Sobre Nos</a>
+      </nav>
+    </div>
+  
+  </header>
+  
+<main>
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">Cadastro de Cliente</h1>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">Seu plano</span>
+        <span class="badge bg-primary rounded-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Plano Nutri Premium</h6>
+            <small class="text-muted">Cobertura com auxilio via chat</small>
+          </div>
+          <span class="text-muted">R$ 35</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Personal Trainer basico</h6>
+            <small class="text-muted">Montagem de treino online</small>
+          </div>
+          <span class="text-muted">R$ 15</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Kit de marmitas 20 dias</h6>
+            <small class="text-muted">marmitas fit plano</small>
+          </div>
+          <span class="text-muted">R$ 400</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>RENATOSARAIVA</small>
+          </div>
+          <span class="text-success">−R$ 10</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (R$)</span>
+          <strong>R$ 440</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <button type="submit" class="btn btn-secondary">Aplicar</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Dados para cadastro</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">Primeiro Nome</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              O Primeiro nome é necessario.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              O ultimo nome é necessario.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            <div class="invalid-feedback">
+              Por favor, adicione um email valido.
+            </div>
+          </div>
+
+          <div class="col-9">
+            <label for="address" class="form-label">Endereco</label>
+            <input type="text" class="form-control" id="address" placeholder="Rua Silva" required="">
+            <div class="invalid-feedback">
+              Por favor adicione um endereco valido
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="numero" class="form-label">Numero</label>
+            <input type="text" class="form-control" id="numero" placeholder="" required="">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">Estado</label>
+            <select class="form-select" id="state" required="">
+              <option value="">Selecione...</option>
+              <option>Sao Paulo</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor, escolha um estado
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="city" class="form-label">Cidade</label>
+            <select class="form-select" id="city" required="">
+              <option value="">Selecione...</option>
+              <option>Sao Paulo</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor, escolha um estado
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="zip" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address">
+          <label class="form-check-label" for="same-address">Endereco é o mesmo de cobranca</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-info">
+          <label class="form-check-label" for="save-info">Salve as informacoes para proxima vez</label>
+        </div>
+
+        <hr class="my-4">
+
+        <h4 class="mb-3">Pagamento</h4>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+            <label class="form-check-label" for="credit">Cartao de credito</label>
+          </div>
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+            <label class="form-check-label" for="debit">Cartao de debito</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Nome do cartao</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+            <small class="text-muted">Nome completo descrito no cartao</small>
+            <div class="invalid-feedback">
+              Nome do cartao é necessario
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Numero do cartao</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+            <div class="invalid-feedback">
+              É necessario o numero do cartao
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Vencimento</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="mm/aaaa" required="">
+            <div class="invalid-feedback">
+              data de vencimento do cartao é necessario
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+            <div class="invalid-feedback">
+              numero de seguranca é necessario
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Confirme a compra</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">© 2021 Health Tech</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#">Privacy</a></li>
+    <li class="list-inline-item"><a href="#">Terms</a></li>
+    <li class="list-inline-item"><a href="#">Support</a></li>
+  </ul>
+</footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
